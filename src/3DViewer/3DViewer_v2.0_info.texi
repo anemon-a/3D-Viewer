@@ -1,0 +1,58 @@
+\input texinfo
+
+@c %**start of header
+@setfilename 3DViewer_v2.0.info
+@settitle 3DViewer_v2.0_v2.0
+@c %**end of header
+
+@copying
+This is a manual for 3DViewer_v2.0_v2.0
+
+Copyright @copyright{} 2023 dyahdeme & lavondas
+@end copying
+
+@ifnottex
+@node Top
+@top The 3DViewer_v2.0 program. Description of work.
+
+Краткое описание работы программы 3DViewer_v2.0 и её функционала.
+
+@titlefont{Описание программы}
+
+В проекте реализовано приложение для просмотра 3D моделей в каркасном виде на языке программирования С++ с использованием @acronym{ООП}. @*
+Логика программы реализована с использованием паттерна @acronym{MVC}.@*
+Этим моделям можно менять цвет граней, вершин. Так же толщину граням и вершинам. Выбор способа отображения точек (нет, круглая и квадратная). Так же тип линии (сплошная, пунктирная). @*
+Есть выбор типа проекции (центральная/параллельная). @*
+Программа позволяет сохранять полученные изображения в файл в форматах .bmp и .jpeg @*
+
+
+@titlefont{Описание функционала 3DViewer_v2.0 v2.0}
+
+@itemize @bullet
+@item
+Программа разработана на языке С++ стандарта C++17 с использованием компилятора g++. 
+@item
+Код программы находится в папке src 
+@item
+Сборка программы настроена с помощью Makefile со стандартным набором целей для GNU-программ: 
+all, install, uninstall, clean, dvi, dist, test, gcov_report. 
+Установка производится в каталог 3DViewer_v2.0_v2.0/src/build
+@item
+Программа разработана в соответствии с принципами @acronym{ООП}
+@item
+Обеспечено покрытие unit-тестами модулей, связанных с вычислением выражений, с помощью библиотеки GTest
+@item
+Графический пользовательский интерфейс реализован на базе Qt
+@end itemize
+@end ifnottex
+
+
+@titlepage
+@title 3DViewer_v2.0 Manual
+
+@page
+@vskip 0pt plus 1fill
+@insertcopying
+@end titlepage
+
+@bye
